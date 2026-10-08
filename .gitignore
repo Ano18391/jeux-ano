@@ -1,1 +1,6 @@
-backend/jeux-ano.db
+backend/node_modules/
+backend/*.db
+backend/*.db-shm
+backend/*.db-wal
+.env
+.DS_Store
