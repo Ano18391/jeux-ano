@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Jeux Ano V10 - Une collection de jeux simples, rapides et amusants."
+    >
+
+    <title>Jeux Ano V10 🌿</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+<!-- =====================================================
+     APPLICATION
+===================================================== -->
+
+<div id="app">
+
+    <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+    <nav class="navbar">
+
+        <div class="brand">
+            <span>🌿</span>
+
+            <div>
+                <strong>Jeux Ano</strong>
+                <small> V10</small>
+            </div>
+        </div>
+
+        <div class="nav-actions">
+
+            <button
+                type="button"
+                id="homeButton"
+                title="Accueil"
+            >
+                🏠
+            </button>
+
+            <button
+                type="button"
+                id="profileButton"
+                title="Profil"
+            >
+                👤
+            </button>
+
+            <button
+                type="button"
+                id="logoutButton"
+                title="Déconnexion"
+            >
+                ↪️
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =================================================
+         CONTENU PRINCIPAL
+    ================================================== -->
+
+    <main class="container">
+
+        <!-- =============================================
+             ACCUEIL
+        ============================================== -->
+
+        <section
+            id="homeScreen"
+            class="home-screen"
+        >
+
+            <div class="hero">
+
+                <div class="hero-main">
+
+                    <span class="eyebrow">
+                        🌱 BIENVENUE DANS JEUX ANO
+                    </span>
+
+                    <h1>
+                        Salut
+                        <span data-username>
+                            Joueur
+                        </span> 👋
+                    </h1>
+
+                    <p>
+                        Joue, progresse, gagne de l'XP
+                        et construis ton meilleur score.
+                    </p>
+
+                </div>
+
+
+                <div class="level-card">
+
+                    <span>
+                        TON NIVEAU
+                    </span>
+
+                    <strong data-level>
+                        1
+                    </strong>
+
+                    <div class="xp-bar">
+
+                        <div
+                            class="xp-progress"
+                            style="width: 0%"
+                        ></div>
+
+                    </div>
+
+                    <small data-xp>
+                        0 / 100 XP
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================================
+                 STATISTIQUES
+            ========================================== -->
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <span>🎮</span>
+
+                    <strong data-games>
+                        0
+                    </strong>
+
+                    <small>
+                        Parties jouées
+                    </small>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span>🏆</span>
+
+                    <strong data-wins>
+                        0
+                    </strong>
+
+                    <small>
+                        Victoires
+                    </small>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span>😢</span>
+
+                    <strong data-losses>
+                        0
+                    </strong>
+
+                    <small>
+                        Défaites
+                    </small>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span>🤝</span>
+
+                    <strong data-draws>
+                        0
+                    </strong>
+
+                    <small>
+                        Égalités
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================================
+                 JEUX
+            ========================================== -->
+
+            <div class="section-title">
+
+                <span class="eyebrow">
+                    🎮 COLLECTION
+                </span>
+
+                <h2>
+                    Choisis ton jeu
+                </h2>
+
+            </div>
+
+
+            <div class="games-grid">
+
+                <!-- PFC -->
+
+                <article class="game-card green">
+
+                    <div>
+
+                        <div class="game-icon">
+                            ✊
+                        </div>
+
+                        <h3>
+                            Pierre Feuille Ciseaux
+                        </h3>
+
+                        <p>
+                            Affronte le bot dans
+                            une partie en 5 manches.
+                        </p>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="primary-button"
+                        data-open-game="rps"
+                    >
+                        Jouer
+                    </button>
+
+                </article>
+
+
+                <!-- NOMBRE -->
+
+                <article class="game-card blue">
+
+                    <div>
+
+                        <div class="game-icon">
+                            🔥
+                        </div>
+
+                        <h3>
+                            Devine le nombre
+                        </h3>
+
+                        <p>
+                            Trouve le nombre secret
+                            entre 1 et 1000.
+                        </p>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="primary-button"
+                        data-open-game="number"
+                    >
+                        Jouer
+                    </button>
+
+                </article>
+
+
+                <!-- CALCULATRICE -->
+
+                <article class="game-card gold">
+
+                    <div>
+
+                        <div class="game-icon">
+                            🧮
+                        </div>
+
+                        <h3>
+                            Calculatrice
+                        </h3>
+
+                        <p>
+                            Effectue des calculs
+                            rapidement et simplement.
+                        </p>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="primary-button"
+                        data-open-game="calculator"
+                    >
+                        Ouvrir
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PIERRE FEUILLE CISEAUX
+        ================================================== -->
+
+        <section
+            id="rpsScreen"
+            class="game-screen hidden"
+        >
+
+            <button
+                type="button"
+                class="back-button"
+                data-back-home
+            >
+                ← Retour
+            </button>
+
+
+            <div class="game-panel">
+
+                <div class="game-header">
+
+                    <span>
+                        ✊
+                    </span>
+
+                    <div>
+
+                        <span class="eyebrow">
+                            JEU 01
+                        </span>
+
+                        <h2>
+                            Pierre Feuille Ciseaux
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+                    Choisis ton symbole.
+                    Le premier à prendre l'avantage
+                    après 5 manches remporte la partie.
+                </p>
+
+
+                <div class="rps-buttons">
+
+                    <button
+                        type="button"
+                        data-rps="pierre"
+                    >
+                        ✊
+
+                        <span>
+                            Pierre
+                        </span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        data-rps="feuille"
+                    >
+                        ✋
+
+                        <span>
+                            Feuille
+                        </span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        data-rps="ciseaux"
+                    >
+                        ✌️
+
+                        <span>
+                            Ciseaux
+                        </span>
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="rpsResult"
+                    class="result-box"
+                >
+                    Choisis une option pour commencer.
+                </div>
+
+
+                <div class="score-board">
+
+                    <div>
+
+                        <small>
+                            TOI
+                        </small>
+
+                        <strong id="rpsPlayerScore">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <small>
+                            MANCHES
+                        </small>
+
+                        <strong id="rpsRounds">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <small>
+                            BOT
+                        </small>
+
+                        <strong id="rpsBotScore">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             DEVINE LE NOMBRE
+        ================================================== -->
+
+        <section
+            id="numberScreen"
+            class="game-screen hidden"
+        >
+
+            <button
+                type="button"
+                class="back-button"
+                data-back-home
+            >
+                ← Retour
+            </button>
+
+
+            <div class="game-panel">
+
+                <div class="game-header">
+
+                    <span>
+                        🔥
+                    </span>
+
+                    <div>
+
+                        <span class="eyebrow">
+                            JEU 02
+                        </span>
+
+                        <h2>
+                            Devine le nombre
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+                    Le nombre secret est compris entre
+                    <strong>1 et 1000</strong>.
+                    Tu as 10 essais.
+                </p>
+
+
+                <div class="number-input">
+
+                    <input
+                        id="numberInput"
+                        type="number"
+                        min="1"
+                        max="1000"
+                        placeholder="Entre un nombre..."
+                    >
+
+                    <button
+                        type="button"
+                        id="numberButton"
+                        class="primary-button"
+                    >
+                        Deviner
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="numberResult"
+                    class="result-box"
+                >
+                    Clique sur « Deviner » pour commencer.
+                </div>
+
+
+                <div
+                    id="numberAttempts"
+                    class="attempts"
+                >
+                    Essais : 0 / 10
+                </div>
+
+
+                <button
+                    type="button"
+                    id="restartNumber"
+                    class="back-button"
+                    style="margin-top: 20px"
+                >
+                    🔄 Nouvelle partie
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CALCULATRICE
+        ================================================== -->
+
+        <section
+            id="calculatorScreen"
+            class="game-screen hidden"
+        >
+
+            <button
+                type="button"
+                class="back-button"
+                data-back-home
+            >
+                ← Retour
+            </button>
+
+
+            <div class="game-panel">
+
+                <div class="game-header">
+
+                    <span>
+                        🧮
+                    </span>
+
+                    <div>
+
+                        <span class="eyebrow">
+                            JEU 03
+                        </span>
+
+                        <h2>
+                            Calculatrice
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+                    Effectue une addition, soustraction,
+                    multiplication, division ou puissance.
+                </p>
+
+
+                <div class="calculator">
+
+                    <input
+                        id="calcFirst"
+                        type="number"
+                        step="any"
+                        placeholder="Premier nombre"
+                    >
+
+
+                    <select id="calcOperator">
+
+                        <option value="+">
+                            +
+                        </option>
+
+                        <option value="-">
+                            −
+                        </option>
+
+                        <option value="*">
+                            ×
+                        </option>
+
+                        <option value="/">
+                            ÷
+                        </option>
+
+                        <option value="**">
+                            Puissance
+                        </option>
+
+                    </select>
+
+
+                    <input
+                        id="calcSecond"
+                        type="number"
+                        step="any"
+                        placeholder="Deuxième nombre"
+                    >
+
+
+                    <button
+                        type="button"
+                        id="calculateButton"
+                        class="primary-button"
+                    >
+                        Calculer
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="calculatorResult"
+                    class="result-box"
+                >
+                    Le résultat apparaîtra ici.
+                </div>
+
+
+                <div class="history">
+
+                    <h3>
+                        Historique
+                    </h3>
+
+                    <div id="calcHistory">
+                        Aucun calcul pour le moment.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PROFIL
+        ================================================== -->
+
+        <section
+            id="profileScreen"
+            class="game-screen hidden"
+        >
+
+            <button
+                type="button"
+                class="back-button"
+                data-back-home
+            >
+                ← Retour
+            </button>
+
+
+            <div class="profile-screen">
+
+                <div class="profile-card">
+
+                    <div class="avatar">
+                        🌿
+                    </div>
+
+                    <h1 data-username>
+                        Joueur
+                    </h1>
+
+                    <p>
+                        Profil Jeux Ano
+                    </p>
+
+
+                    <div class="profile-level">
+
+                        <small>
+                            NIVEAU
+                        </small>
+
+                        <strong data-level>
+                            1
+                        </strong>
+
+                        <div
+                            class="xp-bar"
+                            style="margin-top: 12px"
+                        >
+
+                            <div
+                                class="xp-progress"
+                                style="width: 0%"
+                            ></div>
+
+                        </div>
+
+                        <small
+                            data-xp
+                        >
+                            0 / 100 XP
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="history-card">
+
+                    <div class="section-title">
+
+                        <span class="eyebrow">
+                            📊 ACTIVITÉ
+                        </span>
+
+                        <h2>
+                            Historique
+                        </h2>
+
+                    </div>
+
+
+                    <div id="historyList">
+                        Aucune partie pour le moment.
+                    </div>
+
+
+                    <button
+                        type="button"
+                        id="resetButton"
+                        class="back-button"
+                        style="margin-top: 30px"
+                    >
+                        🗑️ Réinitialiser ma progression
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- =====================================================
+     NOTIFICATION
+===================================================== -->
+
+<div
+    id="toast"
+    class="toast"
+></div>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="script.js"></script>
+
+
+<!-- =====================================================
+     CONNEXIONS ENTRE HTML ET JAVASCRIPT
+===================================================== -->
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        /* ===============================================
+           NAVIGATION
+        =============================================== */
+
+        const screens = {
+            home: document.getElementById(
+                "homeScreen"
+            ),
+
+            rps: document.getElementById(
+                "rpsScreen"
+            ),
+
+            number: document.getElementById(
+                "numberScreen"
+            ),
+
+            calculator: document.getElementById(
+                "calculatorScreen"
+            ),
+
+            profile: document.getElementById(
+                "profileScreen"
+            )
+        };
+
+
+        function showScreen(name) {
+
+            Object.values(screens).forEach(
+                screen => {
+
+                    if (screen) {
+                        screen.classList.add(
+                            "hidden"
+                        );
+                    }
+
+                }
+            );
+
+            if (screens[name]) {
+                screens[name].classList.remove(
+                    "hidden"
+                );
+            }
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+            if (
+                name === "profile" &&
+                window.JeuxAno
+            ) {
+                window.JeuxAno.displayHistory();
+            }
+        }
+
+
+        /* ===============================================
+           BOUTON ACCUEIL
+        =============================================== */
+
+        const homeButton =
+            document.getElementById(
+                "homeButton"
+            );
+
+        if (homeButton) {
+
+            homeButton.addEventListener(
+                "click",
+                function () {
+                    showScreen("home");
+                }
+            );
+
+        }
+
+
+        /* ===============================================
+           BOUTON PROFIL
+        =============================================== */
+
+        const profileButton =
+            document.getElementById(
+                "profileButton"
+            );
+
+        if (profileButton) {
+
+            profileButton.addEventListener(
+                "click",
+                function () {
+                    showScreen("profile");
+                }
+            );
+
+        }
+
+
+        /* ===============================================
+           DÉCONNEXION
+        =============================================== */
+
+        const logoutButton =
+            document.getElementById(
+                "logoutButton"
+            );
+
+        if (logoutButton) {
+
+            logoutButton.addEventListener(
+                "click",
+                function () {
+
+                    if (
+                        window.JeuxAno &&
+                        typeof window.JeuxAno.logout ===
+                        "function"
+                    ) {
+                        window.JeuxAno.logout();
+                    }
+
+                }
+            );
+
+        }
+
+
+        /* ===============================================
+           OUVERTURE DES JEUX
+        =============================================== */
+
+        document
+            .querySelectorAll(
+                "[data-open-game]"
+            )
+            .forEach(button => {
+
+                button.addEventListener(
+                    "click",
+                    function () {
+
+                        const game =
+                            button.dataset.openGame;
+
+                        showScreen(game);
+
+                        if (
+                            game === "number" &&
+                            window.JeuxAno
+                        ) {
+                            window.JeuxAno
+                                .startNumberGame();
+                        }
+
+                    }
+                );
+
+            });
+
+
+        /* ===============================================
+           RETOUR ACCUEIL
+        =============================================== */
+
+        document
+            .querySelectorAll(
+                "[data-back-home]"
+            )
+            .forEach(button => {
+
+                button.addEventListener(
+                    "click",
+                    function () {
+                        showScreen("home");
+                    }
+                );
+
+            });
+
+
+        /* ===============================================
+           PIERRE FEUILLE CISEAUX
+        =============================================== */
+
+        document
+            .querySelectorAll(
+                "[data-rps]"
+            )
+            .forEach(button => {
+
+                button.addEventListener(
+                    "click",
+                    function () {
+
+                        if (
+                            window.JeuxAno &&
+                            typeof window.JeuxAno.playRPS ===
+                            "function"
+                        ) {
+
+                            window.JeuxAno.playRPS(
+                                button.dataset.rps
+                            );
+
+                        }
+
+                    }
+                );
+
+            });
+
+
+        /* ===============================================
+           DEVINE LE NOMBRE
+        =============================================== */
+
+        const numberInput =
+            document.getElementById(
+                "numberInput"
+            );
+
+        const numberButton =
+            document.getElementById(
+                "numberButton"
+            );
+
+
+        function submitNumber() {
+
+            if (!numberInput) {
+                return;
+            }
+
+            if (
+                window.JeuxAno &&
+                typeof window.JeuxAno.guessNumber ===
+                "function"
+            ) {
+
+                window.JeuxAno.guessNumber(
+                    numberInput.value
+                );
+
+                numberInput.value = "";
+
+                numberInput.focus();
+            }
+
+        }
+
+
+        if (numberButton) {
+
+            numberButton.addEventListener(
+                "click",
+                submitNumber
+            );
+
+        }
+
+
+        if (numberInput) {
+
+            numberInput.addEventListener(
+                "keydown",
+                function (event) {
+
+                    if (
+                        event.key ===
+                        "Enter"
+                    ) {
+                        submitNumber();
+                    }
+
+                }
+            );
+
+        }
+
+
+        const restartNumber =
+            document.getElementById(
+                "restartNumber"
+            );
+
+        if (restartNumber) {
+
+            restartNumber.addEventListener(
+                "click",
+                function () {
+
+                    if (
+                        window.JeuxAno &&
+                        typeof window.JeuxAno
+                            .startNumberGame ===
+                        "function"
+                    ) {
+
+                        window.JeuxAno
+                            .startNumberGame();
+
+                    }
+
+                    if (numberInput) {
+                        numberInput.value = "";
+                        numberInput.focus();
+                    }
+
+                }
+            );
+
+        }
+
+
+        /* ===============================================
+           CALCULATRICE
+        =============================================== */
+
+        const calculateButton =
+            document.getElementById(
+                "calculateButton"
+            );
+
+        if (calculateButton) {
+
+            calculateButton.addEventListener(
+                "click",
+                function () {
+
+                    const first =
+                        document.getElementById(
+                            "calcFirst"
+                        );
+
+                    const second =
+                        document.getElementById(
+                            "calcSecond"
+                        );
+
+                    const operator =
+                        document.getElementById(
+                            "calcOperator"
+                        );
+
+                    if (
+                        !first ||
+                        !second ||
+                        !operator
+                    ) {
+                        return;
+                    }
+
+
+                    if (
+                        window.JeuxAno &&
+                        typeof window.JeuxAno
+                            .useCalculator ===
+                        "function"
+                    ) {
+
+                        window.JeuxAno
+                            .useCalculator(
+                                first.value,
+                                second.value,
+                                operator.value
+                            );
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        /* ===============================================
+           RESET
+        =============================================== */
+
+        const resetButton =
+            document.getElementById(
+                "resetButton"
+            );
+
+        if (resetButton) {
+
+            resetButton.addEventListener(
+                "click",
+                function () {
+
+                    if (
+                        window.JeuxAno &&
+                        typeof window.JeuxAno
+                            .resetProgress ===
+                        "function"
+                    ) {
+
+                        window.JeuxAno
+                            .resetProgress();
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        /* ===============================================
+           RACCOURCIS CLAVIER
+        =============================================== */
+
+        document.addEventListener(
+            "keydown",
+            function (event) {
+
+                if (
+                    event.key === "Escape"
+                ) {
+                    showScreen("home");
+                }
+
+            }
+        );
+
+
+        /* ===============================================
+           INITIALISATION
+        =============================================== */
+
+        showScreen("home");
+
+        if (window.JeuxAno) {
+            window.JeuxAno.updateUI();
+        }
+
+    }
+);
+
+</script>
+
+</body>
+</html>
